@@ -16,10 +16,10 @@ function funcaoConteudo(){
     for(p=0; p<=2; p++){
     document.write(
         "<tr>" +
-            "<td>" + x[p].getAttribute("codigo") + "</td>" +
-            "<td>B</td>" +
-            "<td>C</td>" +
-            "<td>D</td>" +
+            "<td>" + x[p].getAttribute("codigo")+"</td>"+
+            "<td> <img src='imgs/" + x[p].getElementsByTagName("imagem")[0].childNodes[0].nodeValue +"' width='150'></td>" +  
+            "<td>" + x[p].getElementsByTagName("titulo")[0].childNodes[0].nodeValue + "</td>" +
+            "<td>" + x[p].getElementsByTagName("corpo")[0].childNodes[0].nodeValue.substr(0,150) + "</td>" +
         "</tr>");
     }
 }
